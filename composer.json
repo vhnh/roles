@@ -1,0 +1,38 @@
+{
+    "name": "vhnh/roles",
+    "license": "MIT",
+    "description": "Add inheritance to eloquent models",
+    "homepage": "http://github.com/vhnh/roles",
+    "authors": [
+        {
+            "name": "Tobias Thaden",
+            "email": "hello@tobiasthaden.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/vhnh/roles/issues",
+        "source": "https://github.com/vhnh/roles"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Vhnh\\Roles\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vhnh\\Roles\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.2.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.3"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    }
+}

@@ -54,9 +54,4 @@ trait HasRoles
 
         return $model;
     }
-
-    public static function fromEmail(string $email)
-    {
-        return static::firstWhere('email', $email);
-    }
 }

@@ -42,8 +42,8 @@ class RolesTest extends \Orchestra\Testbench\TestCase
     {
         $john = $this->create(['email' => 'johndoe@example.com', 'type' => 'admin'])->fresh();
 
-        $this->assertEquals($john, User::fromEmail('johndoe@example.com'));
-        $this->assertEquals($john, Admin::fromEmail('johndoe@example.com'));
+        $this->assertEquals($john, User::firstWhere('email', 'johndoe@example.com'));
+        $this->assertEquals($john, Admin::firstWhere('email', 'johndoe@example.com'));
     }
 
     /** @test */
